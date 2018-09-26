@@ -6,10 +6,6 @@ import java.util.Map;
 class Kaffekopp {
     private Map<String, State> states = new HashMap<>();
     private State currentState;
-    private enum amountOfCoffee {
-        EMPTY, HALFFULL, FULL
-    }
-    private amountOfCoffee coffeeAmount;
 
     private boolean isFull = false;
 
@@ -19,7 +15,6 @@ class Kaffekopp {
         states.put("fylls", new FyllsKopp());
 
         currentState = states.get("tom");
-        coffeeAmount = amountOfCoffee.EMPTY;
     }
 
     public void happening() {
