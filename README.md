@@ -1,0 +1,3 @@
+# statemachine_001
+
+I was bored and forgot to drink coffee after lunch, so i decided to start researching state machines. And here we are...
